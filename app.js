@@ -20,7 +20,7 @@ app.use(cors())
 
 // Connect database
 mongoose.connect(
-  DB_CONNECTION,
+  DB_CONNECTION || MONGODB_URI,
   {useNewUrlParser: true}
 )
 
